@@ -32,7 +32,7 @@ export default function SearchParams() {
         <label htmlFor="breed">
           Breed
           <select
-            disabled={!breeds.length}
+            disabled={breeds.length===0}
             id="breed"
             value={breed}
             onChange={e => updateBreed(e.target.value)}
